@@ -22,14 +22,14 @@ const Navbar: React.FC = () => {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, cursor: 'pointer' }}
+            sx={{ cursor: 'pointer', display: 'inline-block' }} // Use inline-block to limit the clickable area
             onClick={() => handleScroll('Hero')}
           >
             Where's The Bus
           </Typography>
 
           {/* Right side - sections */}
-          <Box>
+          <Box sx={{ marginLeft: 'auto' }}> {/* Add marginLeft to push buttons to the right */}
             <Button color="inherit" onClick={() => handleScroll('Downloads')}>
               Downloads
             </Button>

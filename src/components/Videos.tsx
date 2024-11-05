@@ -3,7 +3,7 @@ import { Box, Typography, Container, Grid } from '@mui/material';
 
 const Videos: React.FC = () => {
   return (
-    <Container maxWidth="md" sx={{ py: 8 }}>
+    <Container maxWidth="md" sx={{ py: 12 }}>
       {/* Project Pitch Video */}
       <Grid container spacing={4} alignItems="flex-start">
         <Grid item xs={12} md={8}>

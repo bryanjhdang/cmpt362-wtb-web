@@ -1,18 +1,18 @@
 import React from 'react';
-import { Card, CardContent, CardActions, Typography, Button, Grid, List, ListItem, Container, Box } from '@mui/material';
+import { Grid, Typography, Container, Box } from '@mui/material';
 
 const teamMembers = [
   {
     name: "Bryan",
-    contributions: ["Project Pitch", "GTFS Realtime", "This Website"]
+    contributions: ["GTFS Realtime API", "GTFS Static", "Web Design"]
   },
   {
     name: "Ethan",
-    contributions: ["Mongo Database", "Feature G", "Feature H", "Feature I", "Feature J"]
+    contributions: ["Database Integration"]
   },
   {
     name: "Josh",
-    contributions: ["Class design", "Feature L", "Feature M", "Feature N", "Feature O"]
+    contributions: ["Boilerplate Design", "UI Mockups", "Fragment Setup"]
   },
   {
     name: "Johnny",
@@ -20,7 +20,7 @@ const teamMembers = [
   },
   {
     name: "Jonathan",
-    contributions: ["Mongo Database", "Show and Tell 2"]
+    contributions: ["Database Setup", "UI Mockups"]
   },
 ];
 
@@ -30,32 +30,36 @@ export default function Team() {
       sx={{
         display: 'flex',
         justifyContent: 'center',
-        backgroundColor: 'secondary.main',
-        padding: '1.5rem 0',
+        backgroundColor: '#8fc5e0',
+        padding: '1.2rem 0',
+        color: '#0e3e59'
       }}
     >
-      <Container maxWidth="md" sx={{ py: 4, borderRadius: 2 }}>
-        <Typography variant="h5" gutterBottom>
-          Team Effort Breakdown
+      <Container maxWidth="md" sx={{ py: 8, borderRadius: 2 }}>
+        <Typography variant="h4" gutterBottom pb={2} sx={{ fontWeight: 'bold' }}>
+          Team Breakdown
         </Typography>
-        <Typography variant='h6' gutterBottom>
-          What did we work on?
-        </Typography>
-        <Grid container spacing={4}>
+        {/* Map through each team member and display name and contributions side by side */}
+        <Grid container spacing={2}>
           {teamMembers.map((member) => (
-            <Grid item xs={12} sm={6} md={4} key={member.name}>
-              <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-                <CardContent>
-                  <Typography variant="h5" component="div" gutterBottom>
+            <Grid item xs={12} key={member.name}>
+              <Box sx={{ display: 'flex', alignItems: 'flex-start', paddingBottom: '0.5rem' }}>
+                {/* Left side - Team member name */}
+                <Box sx={{ flex: 1 }}>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold' }}>
                     {member.name}
                   </Typography>
-                  <List>
-                    {member.contributions.map((contribution, index) => (
-                      <ListItem key={index}>{contribution}</ListItem>
-                    ))}
-                  </List>
-                </CardContent>
-              </Card>
+                </Box>
+
+                {/* Right side - Contributions as inline items */}
+                <Box sx={{ flex: 4, display: 'flex', gap: '1rem' }}>
+                  {member.contributions.map((contribution, index) => (
+                    <Typography key={index} variant="body1" sx={{ fontFamily: 'Roboto, sans-serif' }}>
+                      {contribution}
+                    </Typography>
+                  ))}
+                </Box>
+              </Box>
             </Grid>
           ))}
         </Grid>

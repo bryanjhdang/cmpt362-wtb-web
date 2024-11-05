@@ -7,34 +7,42 @@ const Downloads: React.FC = () => {
       sx={{
         display: 'flex',
         justifyContent: 'center',
-        backgroundColor: 'secondary.main',
+        backgroundColor: '#8fc5e0',
         padding: '1.5rem 0',
       }}
     >
-      <Container maxWidth="md" sx={{ display: 'flex', justifyContent: 'space-around' }}>
-        <Button variant="contained" color="primary" disabled>
+      <Container maxWidth="md" sx={{ display: 'flex', justifyContent: 'space-around', gap: 3 }}>
+        <Button
+          variant="contained"
+          sx={{ backgroundColor: '#0e3e59', flex: 1, mx: 1 }}
+          disabled
+        >
           APK Download
         </Button>
-        <Button variant="contained" color="primary" disabled>
+        <Button
+          variant="contained"
+          sx={{ backgroundColor: '#0e3e59', flex: 1, mx: 1 }}
+          disabled
+        >
           Source Code
         </Button>
         <Button
           variant="contained"
-          color="primary"
-          href="https://github.com/dummy-link"
+          sx={{ backgroundColor: '#0e3e59', flex: 1, mx: 1 }} 
+          href="https://github.com/JoshuaJLi/cmpt362-wtb"
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub Repository
+          App Repo
         </Button>
         <Button
           variant="contained"
-          color="primary"
+          sx={{ backgroundColor: '#0e3e59', flex: 1, mx: 1 }}
           href="https://github.com/bryanjhdang/wheres-the-bus"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Website GitHub
+          Website Repo
         </Button>
       </Container>
     </Box>
