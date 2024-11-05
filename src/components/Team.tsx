@@ -12,7 +12,7 @@ const teamMembers = [
   },
   {
     name: "Josh",
-    contributions: ["Boilerplate Design", "UI Mockups", "Fragment Setup"]
+    contributions: ["Class Modelling", "UI Mockups", "Boilerplate/Fragment Setup"]
   },
   {
     name: "Johnny",
