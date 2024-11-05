@@ -1,4 +1,3 @@
-import React from 'react';
 import { Grid, Typography, Container, Box } from '@mui/material';
 
 const teamMembers = [
