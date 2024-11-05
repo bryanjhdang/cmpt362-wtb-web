@@ -42,7 +42,7 @@ export default function Team() {
         <Grid container spacing={2}>
           {teamMembers.map((member) => (
             <Grid item xs={12} key={member.name}>
-              <Box sx={{ display: 'flex', alignItems: 'flex-start', paddingBottom: '0.5rem' }}>
+              <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, alignItems: 'flex-start', paddingBottom: '0.5rem' }}>
                 {/* Left side - Team member name */}
                 <Box sx={{ flex: 1 }}>
                   <Typography variant="body1" sx={{ fontWeight: 'bold' }}>
@@ -51,7 +51,7 @@ export default function Team() {
                 </Box>
 
                 {/* Right side - Contributions as inline items */}
-                <Box sx={{ flex: 4, display: 'flex', gap: '1rem' }}>
+                <Box sx={{ flex: 4, display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, gap: '0.5rem' }}>
                   {member.contributions.map((contribution, index) => (
                     <Typography key={index} variant="body1" sx={{ fontFamily: 'Roboto, sans-serif' }}>
                       {contribution}

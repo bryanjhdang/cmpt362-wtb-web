@@ -11,7 +11,15 @@ const Downloads: React.FC = () => {
         padding: '1.5rem 0',
       }}
     >
-      <Container maxWidth="md" sx={{ display: 'flex', justifyContent: 'space-around', gap: 3 }}>
+      <Container 
+        maxWidth="md" 
+        sx={{ 
+          display: 'flex', 
+          flexDirection: { xs: 'column', md: 'row' }, // Change to column on small screens
+          justifyContent: 'space-around', 
+          gap: 3 
+        }}
+      >
         <Button
           variant="contained"
           sx={{ backgroundColor: '#0e3e59', flex: 1, mx: 1 }}

@@ -28,8 +28,8 @@ const Navbar: React.FC = () => {
             Where's The Bus
           </Typography>
 
-          {/* Right side - sections */}
-          <Box sx={{ marginLeft: 'auto' }}> {/* Add marginLeft to push buttons to the right */}
+          {/* Right side - sections (hidden on small screens) */}
+          <Box sx={{ marginLeft: 'auto', display: { xs: 'none', md: 'flex' } }}> 
             <Button color="inherit" onClick={() => handleScroll('Downloads')}>
               Downloads
             </Button>
