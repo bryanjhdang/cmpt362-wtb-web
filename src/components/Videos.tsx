@@ -33,7 +33,7 @@ const Videos: React.FC = () => {
         <Grid item xs={12} md={8}>
           <Box 
             component="iframe"
-            src="https://youtu.be/2Dzo_elfJW8"
+            src="https://youtube.com/embed/2Dzo_elfJW8"
             title="Show and Tell 1"
             width="100%"
             height="315px"
