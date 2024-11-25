@@ -22,7 +22,7 @@ const Videos: React.FC = () => {
           <Typography variant="h5" gutterBottom>
             Project Pitch
           </Typography>
-          <Typography variant="body2">
+          <Typography variant="body1">
             Want to learn more?
           </Typography>
         </Grid>
@@ -48,6 +48,30 @@ const Videos: React.FC = () => {
           </Typography>
           <Typography variant="body1">
             Covering what we have so far, and what's planned next.
+          </Typography>
+        </Grid>
+      </Grid>
+
+      {/* Show and Tell 2 Video */}
+      <Grid container spacing={4} alignItems="flex-start" sx={{ mt: 4 }}>
+        <Grid item xs={12} md={8}>
+          <Box 
+            component="iframe"
+            src="https://youtube.com/embed/4q_iBrKo_sw"
+            title="Show and Tell 1"
+            width="100%"
+            height="315px"
+            sx={{ border: 0 }}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </Grid>
+        <Grid item xs={12} md={4} sx={{ display: 'flex', flexDirection: 'column' }}>
+          <Typography variant="h5" gutterBottom>
+            Show and Tell 2
+          </Typography>
+          <Typography variant="body1">
+            The final steps before completion.
           </Typography>
         </Grid>
       </Grid>
