@@ -23,7 +23,7 @@ const Downloads: React.FC = () => {
         <Button
           variant="contained"
           sx={{ backgroundColor: '#0e3e59', flex: 1, mx: 1 }}
-          href="https://vault.sfu.ca/index.php/s/Jrk7Z1k1oYXnIyb"
+          href="https://vault.sfu.ca/index.php/s/QvbFqNZ4z2Wgmn1"
           target='_blank'
           rel='noopener noreferrer'
         >
@@ -32,7 +32,7 @@ const Downloads: React.FC = () => {
         <Button
           variant="contained"
           sx={{ backgroundColor: '#0e3e59', flex: 1, mx: 1 }}
-          href="https://vault.sfu.ca/index.php/s/QvbFqNZ4z2Wgmn1"
+          href="https://vault.sfu.ca/index.php/s/Jrk7Z1k1oYXnIyb"
           target='_blank'
           rel='noopener noreferrer'
         >
