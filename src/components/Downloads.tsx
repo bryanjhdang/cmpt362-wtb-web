@@ -23,14 +23,14 @@ const Downloads: React.FC = () => {
         <Button
           variant="contained"
           sx={{ backgroundColor: '#0e3e59', flex: 1, mx: 1 }}
-          disabled
+          href="../../public/app-debug.apk"
         >
           APK Download
         </Button>
         <Button
           variant="contained"
           sx={{ backgroundColor: '#0e3e59', flex: 1, mx: 1 }}
-          disabled
+          href='../../public/cmpt362-wtb.zip'
         >
           Source Code
         </Button>
