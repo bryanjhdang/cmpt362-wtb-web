@@ -4,7 +4,7 @@ import ThreadDiagram from '../assets/thread-diagram.png'
 const teamMembers = [
   {
     name: "Bryan",
-    contributions: ["GTFS Realtime API,", "GTFS Static,", "Web Design,", "Protobuf Integration"]
+    contributions: ["GTFS Realtime API,", "Web Design,", "Protobuf Integration,", "Schedule Trips,", "UI/UX Design"]
   },
   {
     name: "Ethan",
@@ -12,15 +12,15 @@ const teamMembers = [
   },
   {
     name: "Josh",
-    contributions: ["Class Modelling,", "UI Mockups,", "Boilerplate/Fragment Setup,", "Scheduled Trips"]
+    contributions: ["Class Modelling,", "UI Mockups,", "Boilerplate/Fragment Setup,", "Scheduled Trips,", "Notifications"]
   },
   {
     name: "Johnny",
-    contributions: ["GTFS Static,", "NFC Tap,", "Notifications,", "Stop Searches"]
+    contributions: ["GTFS Static,", "NFC Tap,", "Notifications,", "Stop Searches,", "Favorite Stops"]
   },
   {
     name: "Jonathan",
-    contributions: ["Database Setup,", "UI Mockups,", "Nearby Bus Stops"]
+    contributions: ["Database Setup,", "UI Mockups,", "Nearby Bus Stops,", "Location Service"]
   },
 ];
 

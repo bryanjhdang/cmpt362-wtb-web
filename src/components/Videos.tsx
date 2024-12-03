@@ -75,6 +75,30 @@ const Videos: React.FC = () => {
           </Typography>
         </Grid>
       </Grid>
+
+      {/* Final Video */}
+      <Grid container spacing={4} alignItems="flex-start" sx={{ mt: 4 }}>
+        <Grid item xs={12} md={8}>
+          <Box 
+            component="iframe"
+            src="https://youtube.com/embed/4q_iBrKo_sw"
+            title="Show and Tell 1"
+            width="100%"
+            height="315px"
+            sx={{ border: 0 }}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </Grid>
+        <Grid item xs={12} md={4} sx={{ display: 'flex', flexDirection: 'column' }}>
+          <Typography variant="h5" gutterBottom>
+            Final Demo
+          </Typography>
+          <Typography variant="body1">
+            Take a look at our app!
+          </Typography>
+        </Grid>
+      </Grid>
     </Container>
   );
 };
